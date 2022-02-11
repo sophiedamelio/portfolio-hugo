@@ -30,3 +30,15 @@ a {
 .content {
   padding: 0 32px;
 }
+
+.card-body p {
+	font-size: .9rem;
+}
+
+.card-header,
+.card-footer {
+	color: #6c757d;
+	font-size: .875em;
+	background-color: var(--light-blue);
+	color: var(--main-blue);
+}
