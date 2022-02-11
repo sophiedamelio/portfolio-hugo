@@ -9,13 +9,14 @@
 
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 </head>
 
 <body>
 
-  {{ block "header" . }}{{end}}
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
 
   {{ block "main" . }}{{end}}
 
