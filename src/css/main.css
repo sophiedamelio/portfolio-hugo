@@ -40,8 +40,8 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--brown);
-  padding: .5vh;
+  color: var(--lt-brown);
+  padding: .75vh;
 }
 
 a:hover {
@@ -95,6 +95,9 @@ nav {
   background-color: var(--lt-pink);
 }
 
+.card-body image {
+  padding-bottom: 2vh;
+}
 /*.card-body p {
 	font-size: .9rem;
 }*/
@@ -106,8 +109,8 @@ nav {
 
 .card-header,
 .card-footer {
-	color:var(--brown);
-  font-family: var(--ivymode);
+	color:var(--lt-brown);
+  font-family: var(--brandon);
 }
 
 button {
