@@ -26,6 +26,7 @@ body {
 
   font-family: var(--brandon);
   background-color: var(--white);
+  margin: 5vh;
   /*-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;*/
 
@@ -41,13 +42,13 @@ body {
 a {
   text-decoration: none;
   color: var(--lt-brown);
-  padding: .75vh;
+  padding: 1vh;
 }
 
 a:hover {
   text-decoration: none;
   color: var(--white);
-  padding: .5vh;
+  padding: 1vh;
 }
 
 h2 {
@@ -128,3 +129,4 @@ button:hover {
 /*.content {
   padding: 0 32px;
 }*/
+
