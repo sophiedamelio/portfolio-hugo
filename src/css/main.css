@@ -96,7 +96,7 @@ nav {
   background-color: var(--lt-pink);
 }
 
-.card-body image {
+.card-body img {
   padding-bottom: 2vh;
 }
 /*.card-body p {
@@ -130,3 +130,6 @@ button:hover {
   padding: 0 32px;
 }*/
 
+#footer {
+  padding-bottom: 5vh;
+}
