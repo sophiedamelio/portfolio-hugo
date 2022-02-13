@@ -3,6 +3,20 @@
  */
 @import 'imports/reset.css';
 
+
+:root {
+  --main-bg-color: rgb(249, 249, 249);
+  --brown: rgb(110, 87, 91);
+  --orange: rgb(225, 105, 72);
+  --yellow: rgb(254, 173, 99);
+  --pink: rgb(233, 173, 173);
+  --cream: rgb(255, 232, 201);
+  --lt-orange: rgb(231, 135, 107);
+  --lt-brown: rgb(159, 129, 134);
+  --lt-pink: rgb(234, 204, 203);
+  --pastel-orange: rgb(243, 178, 157);
+
+}
 /*
   Or add your statements here:
  */
@@ -25,10 +39,6 @@ body {
 a {
   color: pink;
   text-decoration: none;
-}
-
-#nav-element {
-  padding-top: 300px
 }
 
 .content {
