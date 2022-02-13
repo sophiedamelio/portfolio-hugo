@@ -58,6 +58,7 @@ p {
 
 #name {
   font-family: var(--ivymode);
+  font-size: 30px;
   font-weight: 400;
 }
 
