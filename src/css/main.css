@@ -40,10 +40,12 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--brown);
 }
 
 a:hover {
   text-decoration: none;
+  color: var(--white);
 }
 
 h2 {
