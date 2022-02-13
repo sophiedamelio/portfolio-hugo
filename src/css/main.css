@@ -39,7 +39,10 @@ body {
 }
 
 a {
-  color: pink;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 
@@ -71,12 +74,13 @@ nav {
   min-height: 70px;
 }
 
-.nav-item {
+.nav-link {
   margin-bottom: 30px;
   color: var(--orange);
 }
 
-.nav-item:hover {
+
+.nav-link:hover {
   color: var(--white);
   background-color: var(--lt-orange);
 }
@@ -102,6 +106,7 @@ nav {
 }
 
 button {
+  border-radius: 500px;
   border: 2px solid var(--yellow);
   background-color: var(--white);
 }
