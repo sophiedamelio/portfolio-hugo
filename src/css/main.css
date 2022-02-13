@@ -5,7 +5,7 @@
 
 
 :root {
-  --main-bg-color: rgb(249, 249, 249);
+  --white: rgb(250, 250, 250);
   --brown: rgb(110, 87, 91);
   --orange: rgb(225, 105, 72);
   --yellow: rgb(254, 173, 99);
@@ -15,7 +15,8 @@
   --lt-brown: rgb(159, 129, 134);
   --lt-pink: rgb(234, 204, 203);
   --pastel-orange: rgb(243, 178, 157);
-
+  --ivymode: ivymode, sans-serif;
+  --brandon: brandon-grotesque, sans-serif;
 }
 /*
   Or add your statements here:
@@ -23,7 +24,8 @@
 body {
   font-size: calc(10px + 1vmin);
 
-  font-family: brandon-grotesque, sans-serif;
+  font-family: var(--brandon);
+  background-color: var(--white);
   /*-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;*/
 
@@ -39,6 +41,33 @@ body {
 a {
   color: pink;
   text-decoration: none;
+}
+
+h2 {
+  font-family: var(--ivymode);
+  color: var(--brown);
+}
+
+p {
+  color: var(--lt-brown);
+}
+
+#about-text {
+  font-family: var--(brandon-grotesque);
+}
+
+#name {
+  font-family: var(--ivymode);
+  font-weight: 400;
+}
+
+.nav-item {
+  color: var(--orange);
+}
+
+.nav-item:hover {
+  color: var(--white);
+  background-color: var(--lt-orange);
 }
 
 .content {
