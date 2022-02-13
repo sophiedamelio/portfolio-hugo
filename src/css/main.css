@@ -56,12 +56,23 @@ p {
   font-family: var--(brandon-grotesque);
 }
 
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 #name {
   font-family: var(--ivymode);
+  font-size: 30px;
   font-weight: 400;
+  padding-top: 30px;
+  min-height: 70px;
 }
 
 .nav-item {
+  margin-bottom: 30px;
   color: var(--orange);
 }
 
@@ -70,18 +81,37 @@ p {
   background-color: var(--lt-orange);
 }
 
-.content {
-  padding: 0 32px;
+
+.card {
+  background-color: var(--lt-pink);
 }
 
-.card-body p {
+/*.card-body p {
 	font-size: .9rem;
+}*/
+
+.card-text {
+  font-family: var(--brandon);
+  color: var(--brown);
 }
 
 .card-header,
 .card-footer {
-	color: #6c757d;
-	font-size: .875em;
-	background-color: var(--light-blue);
-	color: var(--main-blue);
+	color:var(--brown);
+  font-family: var(--ivymode);
 }
+
+button {
+  border: 2px solid var(--yellow);
+  background-color: var(--white);
+}
+
+button:hover {
+  border: 2px solid var(--yellow);
+  background-color: var(--yellow);
+  color: var(--white)
+}
+
+/*.content {
+  padding: 0 32px;
+}*/
