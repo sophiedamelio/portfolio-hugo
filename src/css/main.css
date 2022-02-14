@@ -59,13 +59,11 @@ body {
 a {
   text-decoration: none;
   color: var(--lt-brown);
-  padding: 1vh;
 }
 
 a:hover {
   text-decoration: none;
   color: var(--white);
-  padding: 1vh;
 }
 
 h2 {
@@ -90,25 +88,36 @@ nav {
 
 #name {
   padding-top: 0.1px;
+  padding-left: 0px;
   font-family: var(--ivymode);
   font-size: 30px;
   font-weight: 400;
   min-height: 70px;
 }
 
+#name:hover {
+  padding-top: 0.1px;
+  padding-left: 0px;
+  font-family: var(--ivymode);
+  color: var(--orange);
+  font-size: 30px;
+  font-weight: 400;
+  min-height: 70px;
+}
+
+
 .nav-link {
   margin-bottom: 30px;
   color: var(--orange);
-  border-bottom-left-radius: 500px;
-  border-bottom-right-radius: 500px;
+  border-radius: 500px;
 }
 
 
 .nav-link:hover {
+  margin-bottom: 30px;
   color: var(--white);
   background-color: var(--lt-orange);
-  border-bottom-left-radius: 500px;
-  border-bottom-right-radius: 500px;
+  border-radius: 500px;
 }
 
 
@@ -130,10 +139,10 @@ nav {
 
 
 .card-header {
-  padding: 5vh;
-  padding-left: 20px;
   font-size: larger;
   background-color: var(--white);
+  padding: 3vh;
+  padding-left: 0vh;
 }
 
 .card-header,
@@ -146,12 +155,14 @@ button {
   border-radius: 500px;
   border: 2px solid var(--lt-brown);
   background-color: var(--white);
+  padding: 0.75vh;
 }
 
 button:hover {
   border: 2px solid var(--lt-brown);
   background-color: var(--lt-brown);
-  color: var(--white)
+  color: var(--white);
+  padding: 0.75vh;
 }
 
 /*.content {
@@ -159,5 +170,5 @@ button:hover {
 }*/
 
 #footer {
-  padding-bottom: 5vh;
+  padding-bottom: 17vh;
 }
