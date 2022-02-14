@@ -27,6 +27,7 @@ body {
   font-family: var(--brandon);
   background-color: var(--white);
   margin: 5vh;
+  padding: 20px;
   /*-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;*/
 
@@ -132,6 +133,7 @@ nav {
   padding: 5vh;
   padding-left: 20px;
   font-size: larger;
+  background-color: var(--white);
 }
 
 .card-header,
