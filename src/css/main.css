@@ -100,6 +100,7 @@ nav {
   padding-left: 0px;
   font-family: var(--ivymode);
   color: var(--orange);
+  background-color: var(--white);
   font-size: 30px;
   font-weight: 400;
   min-height: 70px;
@@ -156,6 +157,9 @@ button {
   border: 2px solid var(--lt-brown);
   background-color: var(--white);
   padding: 0.75vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin-right: 3vh;
 }
 
 button:hover {
@@ -163,6 +167,9 @@ button:hover {
   background-color: var(--lt-brown);
   color: var(--white);
   padding: 0.75vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin-right: 3vh;
 }
 
 /*.content {
