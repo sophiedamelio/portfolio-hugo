@@ -72,23 +72,26 @@ nav {
 }
 
 #name {
+  padding-top: 0.1px;
   font-family: var(--ivymode);
   font-size: 30px;
   font-weight: 400;
-  padding-top: 30px;
   min-height: 70px;
 }
 
 .nav-link {
   margin-bottom: 30px;
   color: var(--orange);
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
 }
 
 
 .nav-link:hover {
   color: var(--white);
   background-color: var(--lt-orange);
-  border-radius: 500px;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
 }
 
 
