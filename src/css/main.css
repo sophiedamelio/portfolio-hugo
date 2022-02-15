@@ -40,6 +40,11 @@ body {
   color: white;*/
 }
 
+img {
+  border-radius: .25rem;
+  margin-bottom: 2vh;
+}
+
 .about p {
   font-size: larger;
 }
@@ -51,6 +56,7 @@ body {
 
 
 #headshot {
+  margin-bottom: 0vh;
   border-radius: 50%;
   height:350px;
   width:350px;
@@ -93,6 +99,7 @@ nav {
   font-size: 30px;
   font-weight: 400;
   min-height: 70px;
+  color: var(--orange);
 }
 
 #name:hover {
@@ -124,37 +131,38 @@ nav {
 
 .card-body {
   background-color: var(--lt-pink);
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
 }
 
-.card-body img {
-  padding-bottom: 2vh;
+.project {
+  border-radius: .25rem;
 }
-/*.card-body p {
-	font-size: .9rem;
-}*/
 
 .card-text {
   font-family: var(--brandon);
-  color: var(--brown);
+  color: var(--lt-brown);
+  font-size: 16px;
 }
 
 
 .card-header {
   font-size: larger;
-  background-color: var(--white);
-  padding: 3vh;
-  padding-left: 0vh;
+  background-color: var(--lt-pink);
+  border-bottom: none;
+  padding: 1.25rem;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
 }
 
 .card-header,
 .card-footer {
-	color:var(--lt-brown);
+	color:var(--brown);
   font-family: var(--brandon);
 }
 
 button {
   border-radius: 500px;
-  border: 2px solid var(--lt-brown);
   background-color: var(--white);
   padding: 0.75vh;
   padding-left: 2vh;
@@ -163,7 +171,6 @@ button {
 }
 
 button:hover {
-  border: 2px solid var(--lt-brown);
   background-color: var(--lt-brown);
   color: var(--white);
   padding: 0.75vh;
@@ -172,6 +179,10 @@ button:hover {
   margin-right: 3vh;
 }
 
+.cta {
+  background-color: var(--pastel-orange);
+  color: var(--white);
+}
 /*.content {
   padding: 0 32px;
 }*/

@@ -1,15 +1,16 @@
 {{ define "main" }}
 
+<!-- add skills section? -->
+<!-- update header text/bio -->
 
+<!-- font on mobile, needs to be larger -->
 
-
-<!-- lets fucking see -->
 <!-- add in href to anchor points on page -->
 <ul class="nav justify-content-start" id="nav-element">
-	<a id="name" class="nav-link"href="/">Sophie Damelio</a>
-	<li class="nav-item"><a class="nav-link" href="">About</a></li>
-	<li class="nav-item"><a class="nav-link" href="">Projects</a></li>
-	<li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+	<a id="name" class="nav-link">Sophie Damelio</a>
+	<li class="nav-item"><a class="nav-link" href="#about-anchor">About</a></li>
+	<li class="nav-item"><a class="nav-link" href="projects-anchor">Projects</a></li>
+	<li class="nav-item"><a class="nav-link" href="contact-anchor">Contact</a></li>
 </ul>
 
 
@@ -17,7 +18,7 @@
 <div class="row" style="padding-bottom: 7vh;">
 	<div class=" col-12 col-sm-6 mt-3 mb-4" style="padding-right: 7vh;">
 		<div class="about">
-			<h2>About</h2>
+			<h2 id="about-anchor">About</h2>
 			<p>I am an LA based full stack web developer.</p></br>
 			<p>With years of experience in public facing roles, creating and building business, and applying my unique background experience to all that I do. I have spent the last two years building my knowledge in Web Development, and am actively seeking full time work.</p>
 		</div>
@@ -27,7 +28,7 @@
 		<img src="https://i.imgur.com/JHCnK3L.jpg" alt="" id="headshot"/>
 	</div>
 </div>
-<h2>Projects</h2>
+<h2 id="projects-anchor">Projects</h2>
 <div>
 	<div class="row">
 		<div class=" col-12 col-sm-6 mt-3 mb-4">
@@ -47,6 +48,7 @@
 			<div class="card project">
 				<h3 class="top card-header d-flex justify-content-between">Wishlist Express App</h3>
 				<div class="card-body">
+					<img class="card-img-bottom img-fluid rounded float-left" src="https://i.imgur.com/EVNI6on.png" alt="Responsive image"/>
 					<p class="card-text">I built a Wishlist app using Express with full CRUD functionality and Google OAuth.</br>
 						MongoDB is used for storage, and it is deployed on Heroku.</p>
 					<button style="margin-bottom: 2vh"><a href="https://github.com/sophiedamelio/project_two">Link to the Repo</a></button>
@@ -77,7 +79,7 @@
 				<h3 class="top card-header d-flex justify-content-between">Ideas To Go Website Build</h3>
 				<div class="card-body">
 					<img class="card-img-bottom img-fluid rounded float-left" src="https://i.imgur.com/Zgn5lPV.jpg" alt="Responsive image"/>
-					<p class="card-text">I developed and designed this website using design assets provided. I organized  content, converted graphics and created page layouts. I wrote responsive CSS including section transitions, CTAs, and general styling of elements beyond the built in Squarespace options. </p>
+					<p class="card-text">I developed and designed this website with provided design assets. I organized  content, converted graphics and created page layouts. I wrote responsive CSS including section transitions, CTAs, and general styling of elements beyond the built in Squarespace options. </p>
 					<!-- add in sentence about not maintaining it, add link to page that displays the screenshots -->
 					<!-- link to itg_detail.html -->
 					<button><a href="">View</a></button>
@@ -89,11 +91,11 @@
 
 <div id="footer">
 	<!-- contact info -->
-	<h2>Contact</h2>
+	<h2 id="contact-anchor">Contact</h2>
 	<p>Email: sophiedamelio@gmail.com</p>
-	<button><a href="https://www.linkedin.com/in/sophiedamelio/">LinkedIn</a></button>
+	<button class="cta"><a class="cta" href="https://www.linkedin.com/in/sophiedamelio/">LinkedIn</a></button>
 	<!-- edit this link to actually be resume -->
-	<button><a href="./directory/yourfile.pdf" download="newfilename">Download Resume</a></button>
+	<button class="cta"><a class="cta" href="/sophiedamelio/downloads/resume.pdf" download="sophie_damelio_resume">Download Resume</a></button>
 </div>
 
 
