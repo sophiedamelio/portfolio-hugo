@@ -59,6 +59,7 @@ img {
 .card {
   border: none;
   background-color: var(--white);
+  border-radius: none;
 }
 
 
@@ -71,13 +72,14 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--lt-brown);
+  color: var(--white);
+  padding: 2vh;
 }
 
-a:hover {
+/*a:hover {
   text-decoration: none;
   color: var(--white);
-}
+}*/
 
 h2 {
   font-family: var(--ivymode);
@@ -148,6 +150,7 @@ nav {
 
 
 .card-headerr {
+  font-family: var(--ivymode);
   font-size: larger;
   border-bottom: none;
   padding: 1.25rem;
@@ -167,9 +170,12 @@ button {
   padding: 2vh;
   margin-right: 3vh;
   border: none;
+  font-size: smaller;
 }
 
+
 button:hover {
+  border-radius: 500px;
   background-color: var(--lt-orange);
   color: var(--white);
   padding: 2vh;
