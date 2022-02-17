@@ -126,6 +126,7 @@ nav {
   margin-bottom: 30px;
   color: var(--lt-orange);
   border-radius: 500px;
+  padding-top: 1.5vh;
 }
 
 
@@ -134,6 +135,7 @@ nav {
   color: var(--white);
   background-color: var(--lt-orange);
   border-radius: 500px;
+  padding-top: 1.5vh;
 }
 
 
