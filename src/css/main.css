@@ -5,7 +5,7 @@
 
 
 /* nav bar on mobile - collapse or just go away? 
-check on anchor tags
+font weight on buttons needs to be lighter, maybe all of brandon does?
 properly do resume download 
 <!-- add skills section? -->
 <!-- update header text/bio -->
@@ -50,6 +50,7 @@ body {
 img {
   border-radius: .25rem;
   margin-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
 .about p {
@@ -74,12 +75,15 @@ a {
   text-decoration: none;
   color: var(--white);
   padding: 2vh;
+  font-weight: 300;
 }
 
-/*a:hover {
+a:hover {
   text-decoration: none;
   color: var(--white);
-}*/
+  padding: 2vh;
+  font-weight: 300;
+}
 
 h2 {
   font-family: var(--ivymode);
@@ -91,7 +95,7 @@ p {
 }
 
 #about-text {
-  font-family: var--(brandon-grotesque);
+  font-family: var(--brandon-grotesque);
 }
 
 
@@ -115,7 +119,7 @@ nav {
   padding-top: 0.1px;
   padding-left: 0px;
   font-family: var(--ivymode);
-  color: var(--orange);
+  color: var(--lt-orange);
   background-color: var(--white);
   font-size: 30px;
   font-weight: 400;
@@ -160,7 +164,7 @@ nav {
 .card-headerr,
 .card-footer {
 	color:var(--brown);
-  font-family: var(--brandon);
+  font-family: var(--ivymode);
 }
 
 button {
