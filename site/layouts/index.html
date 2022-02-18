@@ -1,11 +1,20 @@
 {{ define "main" }}
 
 
-<ul class="nav justify-content-start" id="nav-element">
-	<a id="name" class="nav-link">Sophie Damelio</a>
-	<li class="nav-item"><a class="nav-link" href="#about-anchor">About</a></li>
-	<li class="nav-item"><a class="nav-link" href="#projects-anchor">Projects</a></li>
-	<li class="nav-item"><a class="nav-link" href="#contact-anchor">Contact</a></li>
+<ul class="navbar navbar-expand-lg justify-content-start" id="nav-element">
+	<div class="container-fluid">
+		<a class="navbar-brand" id="name" class="nav-link">Sophie Damelio</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#about-anchor">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="#projects-anchor">Projects</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact-anchor">Contact</a></li>
+			</ul>
+		</div>
+	</div>
 </ul>
 
 
@@ -22,22 +31,22 @@
 	</div>
 	<div class=" col-12 col-sm-6 d-flex justify-content-center">
 		
-		<img src="https://i.imgur.com/JHCnK3L.jpg" alt="" id="headshot"/>
+		<img src="https://i.imgur.com/JHCnK3L.jpg" alt="sophie-headshot" id="headshot"/>
 	</div>
 </div>
 <h2 id="projects-anchor">Projects</h2>
 <div>
 	<div class="row">
 		<div class=" d-flex align-items-stretch col-12 col-sm-6 mt-3 mb-4">
-			<div class=" project">
+			<div class="project">
 				<h3 class="top card-headerr d-flex justify-content-between">everyJob Django App</h3>
 				<div class="card-body">
 					<img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/ixSrCHd.png" alt="Responsive image"/>
 					<p class="card-text">As a part of a four person team I collaboratively  built a Fullstack Django app with full CRUD functionality.
 						We utilized PostgreSQL for database storage, Django built-in Authentication, and deployment on Heroku.</p>
-					<button style="margin-bottom: 2vh"><a href="https://github.com/sophiedamelio/everyJob">Link to the Repo</a></button>
+					<button style="margin-bottom: 2vh"><a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/everyJob">Link to the Repo</a></button>
 					<!-- add in hover w login for demo -->
-					<button><a href="https://sophie-everyjob.herokuapp.com/">Explore everyJob</a></button>
+					<button><a target="_blank" rel="noopener noreferrer" href="https://sophie-everyjob.herokuapp.com/">Explore everyJob</a></button>
 				</div>
 			</div>
 		</div>
@@ -48,9 +57,9 @@
 					<img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/DgzgQqh.png" alt="Responsive image"/>
 					<p class="card-text">I built a Wishlist app using Express with full CRUD functionality and Google OAuth.</br>
 						MongoDB is used for storage, and it is deployed on Heroku.</p>
-					<button style="margin-bottom: 2vh"><a href="https://github.com/sophiedamelio/project_two">Link to the Repo</a></button>
+					<button style="margin-bottom: 2vh"><a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/project_two">Link to the Repo</a></button>
 					<!-- add in hover w login for demo -->
-					<button><a href="https://sophie-project-two.herokuapp.com/">Get Listing</a></button>
+					<button><a target="_blank" rel="noopener noreferrer" href="https://sophie-project-two.herokuapp.com/">Get Listing</a></button>
 				</div>
 			</div>
 		</div>
@@ -65,9 +74,9 @@
 					<img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/b9LmOUu.png" alt="Responsive image"/>
 					<p class="card-text">I built a Connect Four browser game using JavaScript and HTML/CSS.
 						I used a Trello board to plan, and deployed via Github Pages. </p>
-					<button style="margin-bottom: 2vh"><a href="https://github.com/sophiedamelio/connect_four/">Link to the Repo</a></button>
+					<button style="margin-bottom: 2vh"><a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/connect_four/">Link to the Repo</a></button>
 					<!-- add in hover w login for demo -->
-					<button><a href="https://sophiedamelio.github.io/connect_four/">Play Connect Four</a></button>
+					<button><a target="_blank" rel="noopener noreferrer" href="https://sophiedamelio.github.io/connect_four/">Play Connect Four</a></button>
 				</div>
 			</div>
 		</div>
@@ -90,17 +99,20 @@
 	<!-- contact info -->
 	<h2 id="contact-anchor">Contact</h2>
 	<p>Email: sophiedamelio@gmail.com</p>
-	<button class="cta"><a href="https://www.linkedin.com/in/sophiedamelio/">LinkedIn</a></button>
-	<button class="cta"><a href="https://github.com/sophiedamelio/">GitHub</a></button>
+	<button class="cta"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sophiedamelio/">LinkedIn</a></button>
+	<button class="cta"><a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/">GitHub</a></button>
 	<!-- edit this link to actually be resume -->
 	<button class="cta"><a href="/Downloads/Resume.pdf" download="sophie_damelio_resume">Download Resume</a></button>
 </div>
 
-<h2>Ideas To Go Website Build</h2>
-<div class="container">
+
+<div class="container itg">
+	<h2>Ideas To Go Website Build</h2>
 	<div class="row">
 		<div class="col">
-			<p>I developed and designed this website for Ideas To Go from May 2021 - Oct 2021 as a freelance contractor. I no longer maintain the website, the contract ended upon completion of the build. It is hosted on Squarespace, and uses a custom theme I created. I was provided design assets including logos, fonts, and color pallet. I worked with their Designer, "FRANKIE", to impliment her page designs. I learned a lot from being given tangible and detailed designs to recreate for the website.</p>
+			<div class="about">
+				<p>I developed and designed this website for Ideas To Go from May 2021 - Oct 2021 as a freelance contractor. I no longer maintain the website, the contract ended upon completion of the build. It is hosted on Squarespace, and uses a custom theme I created. I was provided design assets including logos, fonts, and a color pallet. I worked with their Designer, "FRANKIE", to impliment her page designs. I learned a lot from the task of recreating detailed designs for the live website.</p>
+			</div>
 		</div>
 		<div class="col">
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -187,7 +199,7 @@
 		</div>
 		<div class="col">
 			<div class="about">
-				<p>I developed the entire website of 40 + pages, and utilized a combination of built in Squarespace features and my own custom CSS. The process of this project brought me many new ways of approaching a problem, and I learned the most from utilizing flexibility and researching and understanding process before delving deep into it. The most technical aspects of the website that I implemented are the angled and responsive page transitions, the custom designs CTA buttons, the responsive images, and the contact form (embed from their CRM, and I connected). </p>
+				<p>I developed the entire website of 40+ pages, and utilized a combination of built in Squarespace features and my own custom CSS. The process of this project brought me many new ways of approaching a problem, and I learned the most from utilizing flexibility and researching and understanding process before delving deep into it. The most technical aspects of the website that I implemented are the angled and responsive page transitions, the custom CTA buttons, the contact form (embed from their CRM), and the responsive images.</p>
 			</div>
 		</div>
 	</div>
