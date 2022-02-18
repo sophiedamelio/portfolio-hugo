@@ -5,7 +5,6 @@
 
 
 /* nav bar on mobile - collapse or just go away? 
-font weight on buttons needs to be lighter, maybe all of brandon does?
 properly do resume download 
 <!-- add skills section? -->
 <!-- update header text/bio -->
@@ -123,7 +122,7 @@ nav {
 }
 
 
-.nav-link {
+.nav-link, .nav-item {
   margin-bottom: 30px;
   color: var(--lt-orange);
   border-radius: 500px;
@@ -131,7 +130,7 @@ nav {
 }
 
 
-.nav-link:hover {
+.nav-link:hover, .nav-item:hover {
   margin-bottom: 30px;
   color: var(--white);
   background-color: var(--lt-orange);
@@ -210,4 +209,12 @@ button:hover {
 .itg p {
   padding-bottom: 15vh;
   color: var(--brown);
+}
+
+.navbar {
+  padding-left: 0px;
+}
+
+.container-fluid {
+  padding-left: 0px;
 }
