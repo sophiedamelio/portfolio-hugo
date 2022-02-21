@@ -1,4 +1,5 @@
 <!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
 
 <head>
 	<meta charset="utf-8">
@@ -24,27 +25,31 @@
 	{{ end }}
 </head>
 
-<html lang="{{ $.Site.Language.Lang }}">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-start">
-    <div class="container-fluid">
-      <!--<a class="navbar-brand" id="name" class="nav-link">Sophie Damelio</a>-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="navbar-brand" id="name" class="nav-link">Sophie Damelio</li>
-          <li class="nav-item"><a class="nav-link" aria-current="page" href="#about-anchor">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects-anchor">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact-anchor">Contact</a></li>
-        </ul>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-start">
+      <div class="container-fluid">
+        <!--<a class="navbar-brand" id="name" class="nav-link">Sophie Damelio</a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar-brand" id="name" class="nav-link">Sophie Damelio</li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#about-anchor">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects-anchor">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-anchor">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  {{.Content}}
+    </nav>
+  </header>
   
-  <div id="footer">
+  <main>
+    {{.Content}}
+  </main>
+  
+  <footer id="footer">
     <!-- contact info -->
     <h2 id="contact-anchor">Contact</h2>
     <p>Email: sophiedamelio@gmail.com</p>
@@ -52,6 +57,7 @@
     <button class="cta"><a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/">GitHub</a></button>
     <!-- edit this link to actually be resume -->
     <button class="cta"><a href="https://docs.google.com/document/d/1LPEHmH7vYy471BvStVojWTBq3CVGEgukQoUej6Y2k0w/export?format=pdf" download="sophie_damelio_resume">Download Resume</a></button>
-  </div>
+  </footer>
 
+</body>
 </html>

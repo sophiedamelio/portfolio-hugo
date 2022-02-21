@@ -4,6 +4,8 @@ date: 2018-11-14T19:02:50-07:00
 draft: false
 ---
 ## hello in md
+{{< figure src="https://i.imgur.com/JHCnK3L.jpg" title="sophie-headshot" >}}
+
 <p>hello?</p>
 
 <div class="row" style="padding-bottom: 7vh;">
