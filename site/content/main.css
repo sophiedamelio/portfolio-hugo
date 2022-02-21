@@ -9,7 +9,6 @@ toggle arrows on itg carosel need to be more obvious/not white
 <!-- add skills section? -->
 <!-- update header text/bio -->
 Button entire area clickable, currently just the a tags are
-itg_detail mobile breakpoint
 */
 
 /*font-family: 'Josefin Sans', sans-serif;*/
@@ -95,7 +94,7 @@ p {
 }
 
 
-button .navbar-toggler {
+.navbar-toggler .collapsed button {
   border-radius: 500px;
   background-color: var(--orange);
   color: var(--white);
@@ -107,7 +106,7 @@ button .navbar-toggler {
   font-size: smaller;
 }
 
-button .navbar-toggler:hover {
+.navbar-toggler .collapsed button:hover {
   border-radius: 500px;
   background-color: var(--lt-orange);
   color: var(--white);
@@ -188,7 +187,7 @@ nav {
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236E575B' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236E575B' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 .project {
@@ -260,8 +259,11 @@ button:hover {
 }
 
 .itg p {
-  padding-bottom: 15vh;
   color: var(--brown);
+}
+
+.itg p #second-p {
+  padding-bottom: 15vh;
 }
 
 .navbar {
