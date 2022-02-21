@@ -3,19 +3,22 @@ title: "home"
 date: 2018-11-14T19:02:50-07:00
 draft: false
 ---
+## hello in md
+<p>hello?</p>
 
 <div class="row" style="padding-bottom: 7vh;">
 	<div class=" d-flex align-items-stretch col-12 col-sm-6 mt-3 mb-4" style="padding-right: 7vh;">
 		<div class="about">
 			<h2 id="about-anchor">About</h2>
 			<p>I am an LA based full stack web developer.</p></br>
-			<p>I am driven to enter software and web development to bring my unwavering motivation and inclusive-centered thinking to my work community. I am design driven and artistic, excel in collective communication, and have a strong ability to pick up new languages and skills quickly.			</p>
+			<p>I am driven to enter software and web development to bring my unwavering motivation and inclusive-centered thinking to my work community. I am design driven and artistic, excel in collective communication, and have a strong ability to pick up new languages and skills quickly.</p>
 		</div>
 	</div>
 	<div class=" col-12 col-sm-6 d-flex justify-content-center">
 		<img src="https://i.imgur.com/JHCnK3L.jpg" alt="sophie-headshot" id="headshot"/>
 	</div>
 </div>
+
 <h2 id="projects-anchor">Projects</h2>
 <div>
 	<div class="row">
