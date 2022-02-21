@@ -1,0 +1,224 @@
+/*
+  You can use import statements to include partials:
+ */
+@import 'imports/reset.css';
+
+
+/* nav bar on mobile - collapse or just go away? 
+toggle arrows on itg carosel need to be more obvious/not white
+properly do resume download 
+<!-- add skills section? -->
+<!-- update header text/bio -->
+Button entire area clickable, currently just the a tags are
+*/
+
+/*font-family: 'Josefin Sans', sans-serif;*/
+
+:root {
+  --white: rgb(250, 250, 250);
+  --brown: rgb(110, 87, 91);
+  --orange: rgb(216, 123, 87);
+  --yellow: rgb(254, 184, 117);
+  --pink: rgb(233, 173, 173);
+  --cream: rgb(255, 232, 201);
+  --lt-orange: rgb(231, 135, 107);
+  --lt-brown: rgb(159, 129, 134);
+  --lt-pink: rgb(234, 204, 203);
+  --pastel-orange: rgb(243, 178, 157);
+  --ivymode: ivymode, sans-serif;
+  --brandon: 'Josefin Sans', sans-serif;
+}
+/*
+  Or add your statements here:
+ */
+body {
+  font-size: calc(10px + 1vmin);
+  font-family: var(--brandon);
+  font-weight: 300;
+  background-color: var(--white);
+  margin: 5vh;
+  padding: 20px;
+  /*-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #282c34;
+  color: white;*/
+}
+
+img {
+  padding-bottom: 2vh;
+}
+
+.about p {
+  font-size: larger;
+  font-family: var(--brandon);
+  font-weight: 300;
+  color: var(--brown);
+}
+
+.card {
+  border: none;
+  background-color: var(--white);
+  border-radius: none;
+}
+
+
+#headshot {
+  margin-bottom: 0vh;
+  border-radius: 50%;
+  height:350px;
+  width:350px;
+} 
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--ivymode);
+  color: var(--brown);
+}
+
+p {
+  color: var(--lt-brown);
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#name {
+  padding-top: 0.1px;
+  padding-left: 0px;
+  font-family: var(--ivymode);
+  font-size: 30px;
+  font-weight: 400;
+  min-height: 70px;
+  color: var(--lt-orange);
+}
+
+#name:hover {
+  padding-top: 0.1px;
+  padding-left: 0px;
+  font-family: var(--ivymode);
+  color: var(--lt-orange);
+  background-color: var(--white);
+  font-size: 30px;
+  font-weight: 400;
+  min-height: 70px;
+}
+
+
+.nav-link {
+  /*margin-bottom: 30px;*/
+  color: var(--lt-orange);
+  padding-top: 1.5vh;
+}
+
+
+.nav-link:hover {
+  /*margin-bottom: 30px;*/
+  color: var(--white);
+  background-color: var(--lt-orange);
+  padding-top: 1.5vh;
+}
+
+.nav-item:hover, .nav-item {
+  background-color: var(--white);
+
+}
+
+.project {
+  background-color: var(--lt-pink);
+}
+
+.card-text {
+  font-family: var(--brandon);
+  font-weight: 300;
+  color: var(--brown);
+  font-size: 16px;
+}
+
+
+.card-headerr {
+  font-family: var(--ivymode);
+  font-size: larger;
+  border-bottom: none;
+  padding: 1.25rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+.card-headerr,
+.card-footer {
+	color:var(--brown);
+  font-family: var(--ivymode);
+}
+
+button {
+  border-radius: 500px;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 2vh;
+  padding-bottom: 1.5vh;
+  margin-right: 3vh;
+  margin-bottom: none;
+  border: none;
+  font-size: smaller;
+}
+
+
+button:hover {
+  border-radius: 500px;
+  background-color: var(--lt-orange);
+  color: var(--white);
+  padding: 2vh;
+  padding-bottom: 1.5vh;
+  margin-right: 3vh;
+  margin-bottom: none;
+  border: none;
+  font-size: smaller;
+}
+
+
+
+/*.content {
+  padding: 0 32px;
+}*/
+
+#footer {
+  padding-bottom: 17vh;
+}
+
+.itg h2 {
+  padding-bottom: 10vh;
+}
+
+.itg p {
+  padding-bottom: 15vh;
+  color: var(--brown);
+}
+
+.navbar {
+  padding-left: 0px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+}
