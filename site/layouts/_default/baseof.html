@@ -1,21 +1,56 @@
 <!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+	<title>Sophie Damelio</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/xev0pnt.css">
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+
+	{{ $stylesheet := .Site.Data.webpack.main }}
+	{{ with $stylesheet.css }}
+	
+	<link href="{{ relURL . }}" rel="stylesheet">
+	{{ end }}
+</head>
+
 <html lang="{{ $.Site.Language.Lang }}">
-
-
-  <!--{{ block "header" . }}{{end}}
-  <body>
-    
-
-  {{ block "main" . }}{{end}}
-</body>
-
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-  {{ $script := .Site.Data.webpack.main }}
-  {{ with $script.js }}
-    <script src="{{ relURL . }}"></script>
-  {{ end }}-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-start">
+    <div class="container-fluid">
+      <!--<a class="navbar-brand" id="name" class="nav-link">Sophie Damelio</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="navbar-brand" id="name" class="nav-link">Sophie Damelio</li>
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="#about-anchor">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects-anchor">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-anchor">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   {{.Content}}
+  <div id="footer">
+    <!-- contact info -->
+    <h2 id="contact-anchor">Contact</h2>
+    <p>Email: sophiedamelio@gmail.com</p>
+    <button class="cta"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sophiedamelio/">LinkedIn</a></button>
+    <button class="cta"><a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/">GitHub</a></button>
+    <!-- edit this link to actually be resume -->
+    <button class="cta"><a href="https://docs.google.com/document/d/1LPEHmH7vYy471BvStVojWTBq3CVGEgukQoUej6Y2k0w/export?format=pdf" download="sophie_damelio_resume">Download Resume</a></button>
+  </div>
 
 </html>
