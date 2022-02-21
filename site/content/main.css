@@ -5,7 +5,6 @@
 
 
 /*
-toggle arrows on itg carosel need to be more obvious/not white
 <!-- add skills section? -->
 <!-- update header text/bio -->
 Button entire area clickable, currently just the a tags are
@@ -94,7 +93,7 @@ p {
 }
 
 
-.navbar-toggler .collapsed button {
+.navbar-toggler .collapsed .navbar-light button {
   border-radius: 500px;
   background-color: var(--orange);
   color: var(--white);
@@ -106,7 +105,7 @@ p {
   font-size: smaller;
 }
 
-.navbar-toggler .collapsed button:hover {
+.navbar-toggler .collapsed .navbar-light button:hover {
   border-radius: 500px;
   background-color: var(--lt-orange);
   color: var(--white);
