@@ -124,22 +124,24 @@ nav {
 }
 
 
-.nav-link, .nav-item {
-  margin-bottom: 30px;
+.nav-link {
+  /*margin-bottom: 30px;*/
   color: var(--lt-orange);
-  border-radius: 500px;
   padding-top: 1.5vh;
 }
 
 
-.nav-link:hover, .nav-item:hover {
-  margin-bottom: 30px;
+.nav-link:hover {
+  /*margin-bottom: 30px;*/
   color: var(--white);
   background-color: var(--lt-orange);
-  border-radius: 500px;
   padding-top: 1.5vh;
 }
 
+.nav-item:hover, .nav-item {
+  background-color: var(--white);
+
+}
 
 .project {
   background-color: var(--lt-pink);
