@@ -128,6 +128,8 @@ nav {
   /*margin-bottom: 30px;*/
   color: var(--lt-orange);
   padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  border-radius: 500px;
 }
 
 
@@ -136,6 +138,8 @@ nav {
   color: var(--white);
   background-color: var(--lt-orange);
   padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  border-radius: 500px;
 }
 
 .nav-item:hover, .nav-item {
@@ -208,6 +212,7 @@ button:hover {
 
 .itg h2 {
   padding-bottom: 10vh;
+  text-align: center;
 }
 
 .itg p {
