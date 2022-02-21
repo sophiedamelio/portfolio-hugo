@@ -4,6 +4,7 @@ date: 2018-11-14T19:02:50-07:00
 draft: false
 ---
 ## hello in md
+{{< myshortcode >}}
 <p>hello?</p>
 
 <div class="row" style="padding-bottom: 7vh;">
@@ -78,3 +79,4 @@ draft: false
 		</div>
 	</div>
 </div>
+{{< /myshortcode >}}
