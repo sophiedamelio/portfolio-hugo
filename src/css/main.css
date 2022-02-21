@@ -4,12 +4,12 @@
 @import 'imports/reset.css';
 
 
-/* nav bar on mobile - collapse or just go away? 
+/*
 toggle arrows on itg carosel need to be more obvious/not white
-properly do resume download 
 <!-- add skills section? -->
 <!-- update header text/bio -->
 Button entire area clickable, currently just the a tags are
+itg_detail mobile breakpoint
 */
 
 /*font-family: 'Josefin Sans', sans-serif;*/
@@ -30,7 +30,7 @@ Button entire area clickable, currently just the a tags are
 }
 /*
   Or add your statements here:
- */
+*/
 body {
   font-size: calc(10px + 1vmin);
   font-family: var(--brandon);
@@ -95,6 +95,29 @@ p {
 }
 
 
+button .navbar-toggler {
+  border-radius: 500px;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 2vh;
+  padding-bottom: 1.5vh;
+  margin-right: 3vh;
+  margin-bottom: none;
+  border: none;
+  font-size: smaller;
+}
+
+button .navbar-toggler:hover {
+  border-radius: 500px;
+  background-color: var(--lt-orange);
+  color: var(--white);
+  padding: 2vh;
+  padding-bottom: 1.5vh;
+  margin-right: 3vh;
+  margin-bottom: none;
+  border: none;
+  font-size: smaller;
+}
 
 nav {
   display: flex;
@@ -142,9 +165,30 @@ nav {
   border-radius: 500px;
 }
 
+.nav-link .show a {
+  color: var(--lt-orange);
+  font-size: 16px;
+  width: 20vh;
+  text-align: center;
+}
+
+.nav-link .show a:hover {
+  color: var(--white);
+  font-size: 16px;
+  width: 20vh;
+  text-align: center;
+}
+
 .nav-item:hover, .nav-item {
   background-color: var(--white);
+}
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236E575B' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236E575B' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
 }
 
 .project {
@@ -171,7 +215,7 @@ nav {
 
 .card-headerr,
 .card-footer {
-	color:var(--brown);
+  color:var(--brown);
   font-family: var(--ivymode);
 }
 
