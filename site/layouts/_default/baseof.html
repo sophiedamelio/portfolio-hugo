@@ -1,12 +1,142 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+        <title>Sophie Damelio</title>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+        <!-- potentially needed bootstrap script, for mobile toggle nav bar? -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://use.typekit.net/xev0pnt.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+    
+    
+        <link rel="stylesheet" href="main.css">
+        
+        <link href="{{ relURL . }}" rel="stylesheet">
+        
+    </head>
+    
+    
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-start">
+            <div class="container-fluid">
+                <!--<a class="navbar-brand" id="name" class="nav-link">Sophie Damelio</a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 500px;background-color: var(--orange);color: var(--white);padding: 2vh;padding-bottom: 1.5vh;margin-right: 3vh;margin-bottom: none;border: none;font-size: smaller;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" id="name" href="/portfolio">Sophie Damelio</a>
+                <div class="navbar-collapse collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" id="nav-linky" aria-current="page" href="portfolio.html#about-anchor">About</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-linky" href="portfolio.html#projects-anchor">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav-linky" href="portfolio.html#contact-anchor">Contact</a></li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="row" style="padding-bottom: 7vh;">
+                <div class=" d-flex align-items-stretch col-12 col-sm-6 mt-3 mb-4" style="padding-right: 7vh;">
+                    <div class="about">
+                        <a name="about-anchor"><h2>About</h2></a>
+                        <p>I am an LA based Full-stack Web Developer who has spent the last two years growing my knowledge base by following my curiosity.</p></br>
+                        <p>I am eager to actively contribute to a team, and apply my spectrum of skills. I pursue both personal and communal growth while delivering solutions with confidence and accuracy. I am design driven and artistic, excel in collective communication, and have a strong ability to pick up new languages and skills quickly.</p><br>
+                        <p>My current abilities include proficiency in: JavaScript, Python, React, HTML/CSS, Django, Express, Node.js, Heroku, AWS, Data Modeling, MongoDB, PostgreSQL.</p>
+                    </div>
+                </div>
+                <div class=" col-12 col-sm-6 d-flex justify-content-center">
+                    <img src="https://i.imgur.com/JHCnK3L.jpg" alt="sophie-headshot" id="headshot"/>
+                </div>
+            </div>
+    
+            <a name="projects-anchor"><h2>Projects</h2></a>
+            <div>
+                <div class="row">
+                    <div class=" d-flex align-items-stretch col-12 col-sm-6 mt-3 mb-4">
+                        <div class="project">
+                            <h3 class="top card-headerr d-flex justify-content-between">everyJob Django App</h3>
+                            <div class="card-body">
+                                <img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/ixSrCHd.png" alt="Responsive image"/>
+                                <p class="card-text">As a part of a four person team I collaboratively  built a Fullstack Django app with full CRUD functionality.
+                                    We utilized PostgreSQL for database storage, Django built-in Authentication, and deployment on Heroku.</p>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/everyJob"><button style="margin-bottom: 2vh">Link to the Repo</button></a>
+                                <!-- add in hover w login for demo -->
+                                <a target="_blank" rel="noopener noreferrer" href="https://sophie-everyjob.herokuapp.com/"><button>Explore everyJob</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex align-items-stretch col-12 col-sm-6 mt-3 mb-4">
+                        <div class=" project">
+                            <h3 class="top card-headerr d-flex justify-content-between">Wishlist Express App</h3>
+                            <div class="card-body">
+                                <img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/DgzgQqh.png" alt="Responsive image"/>
+                                <p class="card-text">I built a Wishlist app using Express with full CRUD functionality and Google OAuth.</br>
+                                    MongoDB is used for storage, and it is deployed on Heroku.</p>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/project_two"><button style="margin-bottom: 2vh">Link to the Repo</button></a>
+                                <!-- add in hover w login for demo -->
+                                <a target="_blank" rel="noopener noreferrer" href="https://sophie-project-two.herokuapp.com/"><button>Listing</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 7vh;">
+                    <div class="d-flex align-items-stretch  col-12 col-sm-6 mt-3 mb-4">
+                        <div class=" project">
+                            <h3 class="top card-headerr d-flex justify-content-between">Connect Four Browser Game</h3>
+                            <div class="card-body">
+                                <!--  should this be an ikmage? -->
+                                <img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/b9LmOUu.png" alt="Responsive image"/>
+                                <p class="card-text">I built a Connect Four browser game using JavaScript and HTML/CSS.
+                                    I used a Trello board to plan, and deployed via Github Pages. </p>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/connect_four/"><button style="margin-bottom: 2vh">Link to the Repo</button></a>
+                                <!-- add in hover w login for demo -->
+                                <a target="_blank" rel="noopener noreferrer" href="https://sophiedamelio.github.io/connect_four/"><button>Play Connect Four</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex align-items-stretch col-12 col-sm-6 mt-3 mb-4">
+                        <div class=" project">
+                            <h3 class="top card-headerr d-flex justify-content-between">Ideas To Go Website</h3>
+                            <div class="card-body">
+                                <img class="card-img-bottom img-fluid float-left" src="https://i.imgur.com/Zgn5lPV.jpg" alt="Responsive image"/>
+                                <p class="card-text">I developed and designed this website with provided design assets. I organized content, converted graphics and created page layouts. I wrote responsive CSS including section transitions, CTAs, and general styling of elements beyond the built in Squarespace options. </p>
+                                <!-- add in sentence about not maintaining it, add link to page that displays the screenshots -->
+                                <!-- link to itg_detail.html -->
+                                <a href='/itg_detail'><button>>View</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer id="footer">
+            <a name="contact-anchor"><h2>Contact</h2></a>
+            <p>Email: sophiedamelio@gmail.com</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sophiedamelio/"><button class="cta">LinkedIn</button></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/sophiedamelio/"><button class="cta">GitHub</button></a>
+            <a href="https://docs.google.com/document/d/1LPEHmH7vYy471BvStVojWTBq3CVGEgukQoUej6Y2k0w/export?format=pdf" download="sophie_damelio_resume"><button class="cta">Download Resume</button></a>
+        </footer>
 
 
 
     {{.Content}}
 
-  
 
 
 </body>
