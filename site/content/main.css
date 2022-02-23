@@ -140,7 +140,6 @@ p {
 }
 
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -264,6 +263,9 @@ button:hover {
   font-size: smaller;
 }
 
+.cta {
+  margin-bottom: 1.5vh;
+}
 
 
 /*.content {

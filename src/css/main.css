@@ -140,7 +140,6 @@ p {
 }
 
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -153,7 +152,6 @@ nav {
   font-family: var(--ivymode);
   font-size: 30px;
   font-weight: 400;
-  min-height: 70px;
   color: var(--lt-orange);
 }
 
@@ -165,7 +163,6 @@ nav {
   background-color: var(--white);
   font-size: 30px;
   font-weight: 400;
-  min-height: 70px;
 }
 
 
@@ -266,6 +263,9 @@ button:hover {
   font-size: smaller;
 }
 
+.cta {
+  margin-bottom: 1.5vh;
+}
 
 
 /*.content {
@@ -295,4 +295,22 @@ button:hover {
 
 .container-fluid {
   padding-left: 0px;
+}
+
+#nav-linky {
+  color: var(--orange);
+  background-color: var(--white);
+  font-size: 16px;
+  width: 15vh;
+  text-align: left;
+  padding-left: 2vh;
+}
+
+#nav-linky:hover { 
+  color: var(--white);
+  background-color: var(--orange);
+  font-size: 16px;
+  width: 15vh;
+  text-align: left;
+  padding-left: 2vh;
 }
