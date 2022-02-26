@@ -312,3 +312,7 @@ button:hover {
   text-align: left;
   padding-left: 2vh;
 }
+
+main {
+  scroll-behavior: smooth; 
+}
