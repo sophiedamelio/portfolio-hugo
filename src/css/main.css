@@ -27,6 +27,11 @@ Button entire area clickable, currently just the a tags are
 /*
   Or add your statements here:
 */
+
+* {
+  scroll-behavior: smooth; 
+}
+
 body {
   font-size: calc(10px + 1vmin);
   font-family: var(--brandon);
@@ -310,9 +315,4 @@ button:hover {
   width: 15vh;
   text-align: left;
   padding-left: 2vh;
-}
-
-main {
-  overflow-y: scroll;
-  scroll-behavior: smooth; 
 }
