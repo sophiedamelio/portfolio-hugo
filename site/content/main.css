@@ -66,6 +66,9 @@ img {
 
 #headshot {
   margin-bottom: 0vh;
+  border-radius: 50%;
+  height:350px;
+  width:350px;
 } 
 
 a {

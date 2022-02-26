@@ -66,6 +66,9 @@ img {
 
 #headshot {
   margin-bottom: 0vh;
+  border-radius: 50%;
+  height:350px;
+  width:350px;
 } 
 
 a {
@@ -264,10 +267,6 @@ button:hover {
   margin-bottom: 1.5vh;
 }
 
-
-/*.content {
-  padding: 0 32px;
-}*/
 
 #footer {
   padding-bottom: 17vh;
