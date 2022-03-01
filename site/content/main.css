@@ -28,7 +28,7 @@ Button entire area clickable, currently just the a tags are
   Or add your statements here:
  */
 
-* {
+html {
   scroll-behavior: smooth; 
 }
 
@@ -49,6 +49,11 @@ body {
   text-align: center;
   background-color: #282c34;
   color: white;*/
+}
+
+#frankie-link {
+  color: var(--brown);
+  font-weight: 700;
 }
 
 img {
