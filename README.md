@@ -1,3 +1,12 @@
+# Portfolio Website
+
+This is the repo for my personal [portfolio website](https://sophiedamelio.com/), below is info about the Hugo template that I used.
+
+You can view my portfolio website [here](https://sophiedamelio.com/).
+
+
+---
+
 # Victor Hugo
 
 ⚠️ **Deprecation Notice** 🏳
